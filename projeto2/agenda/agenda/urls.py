@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('evento/<titulo_evento>', dataEvento),
     path('agenda/', lista_eventos),
+    path('agenda/historico/', historico),
     path('agenda/lista/<int:id_usuario>', json_lista_evento),
     path('agenda/evento/', evento),
     path('agenda/evento/submit', submit_evento),
